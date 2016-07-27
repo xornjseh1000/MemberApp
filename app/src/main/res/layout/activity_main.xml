@@ -6,25 +6,30 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ID"/>
+        android:layout_marginTop="20dp"
+        android:hint="ID"
+        android:id="@+id/et_id"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="PW"/>
+        android:hint="PW"
+        android:id="@+id/et_pw"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20dp"
-        android:text="로그인"/>
+        android:text="로그인"
+        android:id="@+id/bt_login"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="300dp"
         android:textSize="20dp"
-        android:text="계정이 없다면 회원가입을 해주세요"/>
+        android:text="계정이 없다면 회원가입을 해주세요" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20dp"
-        android:text="회원가입"/>
+        android:text="회원가입"
+        android:id="@+id/bt_join"/>
 </LinearLayout>
