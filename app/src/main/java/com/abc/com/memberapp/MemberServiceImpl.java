@@ -1,28 +1,19 @@
 package com.abc.com.memberapp;
 
+import android.content.Context;
+
 import java.util.List;
-import java.util.Map;
 
 /**
  * Created by hsh on 2016-07-27.
  */
 public class MemberServiceImpl implements MemberService{
-
-    private MemberDAO dao = MemberDAO.getInstance();
-
-
-    private MemberBean session;
-
-    private static MemberServiceImpl instance = new MemberServiceImpl();
-
-    public static MemberServiceImpl getInstance() {
-        return instance;
+    MemberDAO dao;
+    MemberBean session;
+    public MemberServiceImpl(Context context) {
+        dao = new MemberDAO(context);
     }
 
-
-    private MemberServiceImpl() {
-        // TODO Auto-generated constructor stub
-    }
 
     @Override
     public String regist(MemberBean mem) {
